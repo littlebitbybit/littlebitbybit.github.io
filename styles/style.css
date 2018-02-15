@@ -1,0 +1,226 @@
+/* designed/built by Alvin Wan 08/06/17 */
+* {
+    float:left;
+    position:relative;
+    font-family:'Cormorant Garamond';
+    margin:0;
+    padding:0;
+}
+body, html, main,section,footer {
+    width:100%;
+}
+p a {
+    display:inline-block;
+    float:none;
+}
+.category {
+    text-transform:uppercase;
+    font-size:0.9em;
+    width:100%;
+    font-family:'Lato';
+    text-align:center;
+    letter-spacing:0.25em;
+}
+.category.without-bar {
+    text-align:left;
+}
+.category .text {
+    width:100%;
+    font-family:inherit;
+    display:inline-block;
+}
+.category .category-bar {
+    margin-top:1.5em;
+    clear:both;
+    width:4em;
+    height:0.25em;
+    background-color:#f15a24;
+    display:inline-block;
+    float:none;
+}
+
+.landing {
+    margin:3em 0;
+}
+.landing-title {
+    font-size:7em;
+    width:100%;
+    text-align:center;
+    margin-top:0.5em;
+}
+.landing-subtitle {
+    margin-top:1em;
+    color:#000;
+    width:100%;
+    text-align:center;
+    font-size:1.5em;
+}
+.landing-subtitle span {
+    display:inline-block;
+    float:none;
+}
+.arrow-down {
+    color:#f15a24;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  60% {
+    -moz-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  60% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  60% {
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.cards {
+    margin-top:3em;
+    width:100%;
+}
+.cards div.card {
+    border-radius:0.5em;
+    box-shadow:0 0 3em rgba(0,0,0,0.15);
+    overflow:hidden;
+    padding:0;
+    width:25em;
+    text-align:left;
+    float:none;
+    display:inline-block;
+}
+.wrap-container {
+    text-align:center;
+}
+div.wrap {
+    float:none;
+    display:inline-block;
+}
+.card + .card {
+    margin-left:2.5em;
+}
+.card span {
+    font-size:1em;
+    text-transform:uppercase;
+    font-family: 'Lato';
+    letter-spacing:0.25em;
+    color:#f7931e;
+    padding: 2em 2.75em 0 2.75em;
+}
+.card h3 {
+    margin:0;
+    line-height:125%;
+    font-size:1.75em;
+    padding:0.25em 1.5em;
+}
+.card p {
+    width:100%;
+    background-color:#f3f3f3;
+    color:#999;
+    margin:1em 0 0 0;
+    padding:1em 2.75em;
+    font-family:'Lato';
+}
+
+
+.twt-title {
+    font-size:2.5em;
+    text-align:center;
+    width:100%;
+    margin-top:1em;
+}
+.twt-copy {
+    font-size:1.7em;
+    margin-top:1em;
+    color:#999;
+}
+.button-container {
+    width:100%;
+    margin-top:2em;
+    margin-bottom:2em;
+}
+.button {
+    font-size:1.75em;
+    padding:0.75em 3.75em;
+    color:#FFF;
+    display:inline-block;
+    border-radius:0.35em;
+    float:none;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7931e+0,f15a24+100 */
+    background: #f7931e; /* Old browsers */
+    background: -moz-linear-gradient(left, #f7931e 0%, #f15a24 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f7931e 0%,#f15a24 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f7931e 0%,#f15a24 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7931e', endColorstr='#f15a24',GradientType=1 ); /* IE6-9 */
+}
+
+.button .tab {
+    position:absolute;
+    top:100%;
+    text-transform:uppercase;
+    letter-spacing:0.15em;
+    background-color:#eee;
+    color:#666;
+    font-size:0.5em;
+    font-family:'Lato';
+    padding:1em 5em;
+    left:50%;
+    border-radius:0 0 0.75em 0.75em;
+    transform: translateX(-50%);
+    white-space:nowrap;
+}
+
+.text-copy {
+    margin:5em 0 3em 0;
+}
+.tc-copy {
+    margin-top:1em;
+    column-count: 2;
+    column-gap:3em;
+    text-align:left;
+    font-size:1.25em;
+    line-height:175%;
+}
