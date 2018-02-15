@@ -171,7 +171,7 @@ div.wrap {
     width:100%;
     margin-top:1em;
 }
-.twt-copy {
+.twt-copy,.half-subtitle {
     font-size:1.7em;
     margin-top:1em;
     color:#999;
@@ -197,14 +197,14 @@ div.wrap {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7931e', endColorstr='#f15a24',GradientType=1 ); /* IE6-9 */
 }
 
-.button .tab {
+.button-container .tab {
     position:absolute;
     top:100%;
     text-transform:uppercase;
     letter-spacing:0.15em;
     background-color:#eee;
     color:#666;
-    font-size:0.5em;
+    font-size:0.75em;
     font-family:'Lato';
     padding:1em 5em;
     left:50%;
@@ -223,4 +223,40 @@ div.wrap {
     text-align:left;
     font-size:1.25em;
     line-height:175%;
+}
+.tc-copy + .category {
+    margin-top:5em;
+}
+
+.halves {
+    background-color:#f6f6f6;
+    padding:5em 0;
+}
+.halves .half {
+    padding:0 5em;
+    margin-top:3em;
+}
+.halves .half + .half {
+    border-left:0.15em solid #e3e3e3;
+}
+.half-subtitle {
+    width:100%;
+    text-align:center;
+    font-size:2em;
+    margin:0;
+}
+.half-title {
+    font-size:3.5em;
+    width:100%;
+    text-align:center;
+}
+.image-container {
+    margin:3em 0 2em 0;
+}
+.half .image-container img {
+    width:100%;
+}
+.button span {
+    float:none;
+    color:rgba(255,255,255,0.5);
 }
