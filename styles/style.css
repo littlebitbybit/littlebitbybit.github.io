@@ -265,8 +265,8 @@ div.wrap {
 }
 
 .halves {
-    background-color:#f6f6f6;
     padding:5em 0;
+    background-color:#f6f6f6;
 }
 .halves .half {
     padding:0 5em;
@@ -379,10 +379,6 @@ div.wrap {
 .text-process {
     margin-bottom:5em;
 }
-header {
-    width:100%;
-    padding:2em 3em;
-}
 .profiles {
     margin:5em 0;
 }
@@ -426,4 +422,121 @@ header {
     box-shadow:0 0 1em rgba(0,0,0,0.25);
     color:#FFF;
     text-decoration:none;
+}
+.sponsors-container.wrap-container {
+    margin-bottom:17em;
+}
+.sponsors-container .wrap {
+    margin-bottom:-15em;
+}
+.sponsorships {
+    width:100%;
+    background-color:#FFF;
+    box-shadow:0 0 1em rgba(0,0,0,0.25);
+    margin-top:5em;
+}
+.sponsorships .row {
+    width:100%;
+    margin:0;
+}
+.sponsorships p {
+    color:#999;
+    width:100%;
+    padding-top:1em;
+    margin-bottom:-2em;
+    text-align:center;
+}
+.sponsorships .row + .row::after {
+    content: "";
+    top:0;
+    position:absolute;
+    left:10%;
+    width:80%;
+    height:0.15em;
+    background-color:#eee;
+    display:inline-block;
+}
+.sponsor-container {
+    text-align:center;
+    padding:5em 3em;
+}
+.sponsor-container + .sponsor-container::before {
+    content:"";
+    position:absolute;
+    top:25%;
+    bottom:25%;
+    background-color:#eee;
+    width:0.15em;
+    left:0;
+}
+.sponsor-text {
+    color:#999;
+    width:100%;
+    font-size:0.9em;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    font-family:'Lato';
+    margin-top:1em;
+}
+.sponsor-logo {
+    width:12.5em;
+    height:10em;
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    float:none;
+    display:inline-block;
+}
+header {
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:#FFF;
+    z-index:100;
+}
+html {
+    padding-top:10em;
+}
+.header-logo {
+    width:5em;
+    margin:2em 3em;
+}
+header nav {
+    float:right;
+    padding-right:3em;
+}
+header li {
+    list-style:none;
+}
+header li a {
+    font-family:'Lato';
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:#999;
+    padding:2.5em 1.5em;
+}
+header li a:hover {
+    color:#333;
+    text-decoration:none;
+    background-color:#f6f6f6;
+}
+footer {
+    padding:10em 0;
+}
+footer p {
+    width:100%;
+    color:#666;
+    text-align:center;
+}
+.links a {
+    font-family:'Lato';
+    color:#999;
+    border-bottom:1px solid rgba(0,0,0,0);
+    font-size:0.9em;
+    text-transform:uppercase;
+    letter-spacing:0.25em;
+}
+.links a + a {
+    margin-left:3em;
 }
