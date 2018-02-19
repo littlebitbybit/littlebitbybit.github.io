@@ -12,6 +12,14 @@ body, html, main,section,footer {
 p a {
     display:inline-block;
     float:none;
+    color:#39b54a;
+    border-bottom:1px solid #39b54a;
+    line-height:115%;
+}
+p a:hover {
+    text-decoration:none;
+    color:#23712d;
+    border-bottom:1px solid #23712d;
 }
 .category {
     text-transform:uppercase;
@@ -20,6 +28,10 @@ p a {
     font-family:'Lato';
     text-align:center;
     letter-spacing:0.25em;
+    color:#666;
+}
+.category:hover {
+    color:#333;
 }
 .category.without-bar {
     text-align:left;
@@ -233,6 +245,8 @@ div.wrap {
     border-radius:0 0 0.75em 0.75em;
     transform: translateX(-50%);
     white-space:nowrap;
+
+    display:none /* for now */
 }
 
 .text-copy {
@@ -407,4 +421,9 @@ header {
     letter-spacing:0.25em;
     font-size:0.8em;
     margin-top:0.5em;
+}
+.button:hover {
+    box-shadow:0 0 1em rgba(0,0,0,0.25);
+    color:#FFF;
+    text-decoration:none;
 }
