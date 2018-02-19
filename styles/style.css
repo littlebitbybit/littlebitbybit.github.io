@@ -423,30 +423,30 @@ div.wrap {
     color:#FFF;
     text-decoration:none;
 }
-.sponsors-container.wrap-container {
+.spsrs-container.wrap-container {
     margin-bottom:17em;
 }
-.sponsors-container .wrap {
+.spsrs-container .wrap {
     margin-bottom:-15em;
 }
-.sponsorships {
+.spsrships {
     width:100%;
     background-color:#FFF;
     box-shadow:0 0 1em rgba(0,0,0,0.25);
     margin-top:5em;
 }
-.sponsorships .row {
+.spsrships .row {
     width:100%;
     margin:0;
 }
-.sponsorships p {
+.spsrships p {
     color:#999;
     width:100%;
     padding-top:1em;
     margin-bottom:-2em;
     text-align:center;
 }
-.sponsorships .row + .row::after {
+.spsrships .row + .row::after {
     content: "";
     top:0;
     position:absolute;
@@ -456,11 +456,11 @@ div.wrap {
     background-color:#eee;
     display:inline-block;
 }
-.sponsor-container {
+.spsr-container {
     text-align:center;
     padding:5em 3em;
 }
-.sponsor-container + .sponsor-container::before {
+.spsr-container + .spsr-container::before {
     content:"";
     position:absolute;
     top:25%;
@@ -469,7 +469,7 @@ div.wrap {
     width:0.15em;
     left:0;
 }
-.sponsor-text {
+.spsr-text {
     color:#999;
     width:100%;
     font-size:0.9em;
@@ -478,7 +478,7 @@ div.wrap {
     font-family:'Lato';
     margin-top:1em;
 }
-.sponsor-img {
+.spsr-img {
     width:12.5em;
     height:10em;
     background-size:contain;
