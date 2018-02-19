@@ -1,4 +1,9 @@
-/* designed/built by Alvin Wan 08/06/17 */
+/*
+ * Designed and programmed by Alvin Wan.
+ * @author: Alvin Wan
+ * @site: alvinwan.com
+ * @date: 02/18/2018
+ */
 * {
     float:left;
     position:relative;
@@ -213,6 +218,7 @@ div.wrap {
     display:inline-block;
     border-radius:0.35em;
     float:none;
+    white-space: nowrap;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8cc63f+0,009245+100 */
     background: #8cc63f; /* Old browsers */
@@ -254,8 +260,7 @@ div.wrap {
 }
 .tc-copy {
     margin-top:1em;
-    column-count: 2;
-    column-gap:3em;
+    column-count:1;
     text-align:left;
     font-size:1.25em;
     line-height:175%;
@@ -272,9 +277,6 @@ div.wrap {
     padding:0 5em;
     margin-top:3em;
 }
-.halves .half + .half {
-    border-left:0.15em solid #e3e3e3;
-}
 .half-subtitle {
     width:100%;
     text-align:center;
@@ -288,9 +290,13 @@ div.wrap {
 }
 .image-container {
     margin:3em 0 2em 0;
+    width:100%;
+    text-align:center;
 }
 .half .image-container img {
     width:100%;
+    display:inline-block;
+    float:none;
 }
 .button span {
     float:none;
@@ -343,10 +349,10 @@ div.wrap {
     box-shadow: 0 0 2em rgba(0,0,0,0.2);
     border-radius:1em;
     padding:0;
-    width:30%;
+    width:100%;
 }
 .blobs .blob + .blob {
-    margin-left:5%;
+    margin-top:3em;
 }
 .blob-cover {
     border-radius:1em 1em 0 0;
@@ -430,7 +436,8 @@ div.wrap {
     margin-bottom:-15em;
 }
 .spsrships {
-    width:100%;
+    width:90%;
+    margin-left:4.5%;
     background-color:#FFF;
     box-shadow:0 0 1em rgba(0,0,0,0.25);
     margin-top:5em;
@@ -539,4 +546,36 @@ footer p {
 }
 .links a + a {
     margin-left:3em;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .tc-copy {
+        column-count: 2;
+        column-gap:3em;
+    }
+    .blobs .blob {
+            width:30%;
+    }
+    .blobs .blob + .blob {
+        margin-top:0;
+        margin-left:5%;
+    }
+    .halves .half + .half {
+        border-left:0.15em solid #e3e3e3;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
