@@ -424,6 +424,9 @@ div.wrap {
     font-size:0.8em;
     margin-top:0.5em;
 }
+.profile-byline + .profile-byline {
+  margin-top:-0.5em;
+}
 .button:hover {
     box-shadow:0 0 1em rgba(0,0,0,0.25);
     color:#FFF;
